@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+
+%Creates a key that is a square with
+
+%letter    = l
+%top left  = x
+%top right = y
+%size      = s
+
+%\newcommand{\key}[4]{   %Implmentation without using #1s
+%    \draw (x, y)--(x+size, y)--(x+size, y-size)--(x, y-size)--(x, y);
+%    \node at (x+s*.5, y-s*.5) {k};
+
+\newcommand{\key}[4]{   %Obfruscated answer
+    \draw (#2, #3)--(#2+#4, #3)--(#2+#4, #3-#4)--(#2, #3-#4)--(#2, #3);
+    \node at (#2+#4*.5, #3-#4*.5) {#1};
+    }
+
+
+\begin{tikzpicture}
+    \foreach \x/\y in {a/1, b/2, c/3} {
+
+\end{tikzpicture}
+
+\end{document}
